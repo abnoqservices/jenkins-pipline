@@ -1,0 +1,351 @@
+
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #c19a6b;
+    --light-bg: #f8f9fa;
+    --border-color: #eaeaea;
+    --text-dark: #333;
+    --text-light: #666;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+}
+
+.product-info-item {
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.product-info-item label {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* Breadcrumb Styles */
+.page-header-area {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumb-area .breadcrumb li {
+    font-size: 12px;
+    color: #8c8c8c;
+}
+
+.breadcrumb-area .breadcrumb li a {
+    color: #8c8c8c;
+}
+
+/* Product Gallery */
+.product-single-thumb {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 26px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 541px;
+    height: 541px;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.single-product-nav .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 173px;
+    height: 100px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.single-product-nav .swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.single-product-nav .swiper-slide:hover {
+    transform: scale(1.05);
+}
+
+/* Product Info */
+.product-single-info {
+    padding: 0px;
+}
+
+.main-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Specification Table */
+.product--properties-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product--properties-row:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.product--properties-row td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.product--properties-label {
+    font-weight: 600;
+    color: var(--primary-color);
+    width: 30%;
+    font-size: 18px;
+    line-height: 23.40px;
+}
+
+.product--properties-value {
+    color: var(--text-dark);
+    font-size: 18px;
+    line-height: 23.40px;
+}
+
+/* Section Title */
+.section-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.content--description {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.content--title {
+    font-size: 31px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Print Button Styles */
+.print-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.print-btn {
+    background-color: #078586;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.print-btn:hover {
+    background-color: #a8845c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.print-btn i {
+    font-size: 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .swiper-slide img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .single-product-nav .swiper-slide {
+        width: 80px;
+        height: 60px;
+    }
+    
+    .product--properties-label,
+    .product--properties-value {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .print-button-container {
+        justify-content: center;
+    }
+}
+
+/* Product Badge */
+.product-badge {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-area {
+    background-image: url('https://t3.ftcdn.net/jpg/05/92/11/98/360_F_592119899_WL4gk4cqSOYKceKUhI4kGNxLgh6Yzxgd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    color: #Fff;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.product--properties-row{
+    padding: 12px 15px;
+    border-bottom:none !important;
+}
+
+@media only screen and (max-width: 1199px) {
+    .container, .container-fluid {
+        padding-bottom: 13px important;
+        padding-top: 10px important;
+    }
+}
+
+/* Hide print button in PDF */
+@media print {
+    .print-button-container,
+    #scroll-to-top,
+    .footer-area,
+    .pdf-download-section {
+        display: none !important;
+    }
+}
+
+/* PDF Download Section */
+.pdf-download-section {
+    background: #f8f9fa;
+    padding: 3px 0;
+    margin-top: 40px;
+    border-top: 1px solid var(--border-color);
+}
+
+.pdf-download-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf-download-btn {
+    background-color: #078586;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.pdf-download-btn:hover {
+    background-color: #066a6a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    color: white;
+    text-decoration: none;
+}
+
+.pdf-download-btn i {
+    font-size: 18px;
+}
+.product-detail {
+display: flex;
+align-items: center;
+margin-bottom: 5px;
+color: gray;
+font-size: 16px;
+}
+
+.product-label {
+width: 100px; /* Adjust width for alignment */
+font-weight: 600;
+}
+
+.product-value {
+flex: 1;
+}
+ul.custom-bullets {
+list-style: none;
+padding-left: 50px;
+}
+ul.custom-bullets li {
+position: relative;
+padding-left: 25px;
+margin-bottom: 8px;
+font-size: 16px;
+line-height: 1.6;
+}
+ul.custom-bullets li::before {
+content: "•";
+position: absolute;
+left: 0;
+color: #007bff; /* bullet color (blue) */
+font-size: 22px;
+top: -2px;
+}
